@@ -1,0 +1,1 @@
+# THIS GITHUB REPO IS CREATED ONLY TO HOST ON GITHUB THE BSP NEWS, CHECK https://t.me/BrawlStarsProjects or https://discord.gg/AM4H743hCu FOR INFOS ON WHAT IS BSP!
