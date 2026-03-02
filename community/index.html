@@ -1,3 +1,121 @@
 <!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Stars Inbox - Videos</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #f39c12;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .video-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .video-card {
+            background: #2c3e50;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid #34495e;
+            transition: transform 0.2s;
+        }
+        .video-card:hover {
+            transform: scale(1.03);
+            border-color: #f39c12;
+        }
+        .thumbnail {
+            width: 100%;
+            height: 180px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: rgba(243, 156, 18, 0.9);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .info {
+            padding: 15px;
+        }
+        .title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+            color: #ecf0f1;
+        }
+        .description {
+            font-size: 0.9em;
+            color: #bdc3c7;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
 
-<html><body><strong>TEST VIDEOS PAGE</strong></body></html>
+    <div class="header">
+        <h1>NEWS & VIDEOS</h1>
+    </div>
+
+    <div class="video-container">
+        <a href="https://www.youtube.com/watch?v=VymLtGx_itc" target="_blank">
+            <div class="video-card">
+                <div class="thumbnail" style="background-image: url('https://img.youtube.com/vi/VymLtGx_itc/mqdefault.jpg');">
+                    <div class="play-button">▶</div>
+                </div>
+                <div class="info">
+                    <div class="title">Supercell ID: Guida Completa</div>
+                    <div class="description">Scopri come collegare i tuoi account e non perdere mai i progressi.</div>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+            <div class="video-card">
+                <div class="thumbnail" style="background-image: url('https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg');">
+                    <div class="play-button">▶</div>
+                </div>
+                <div class="info">
+                    <div class="title">Nuovo Brawler: Anteprima!</div>
+                    <div class="description">Analizziamo le nuove abilità e il gameplay del prossimo aggiornamento.</div>
+                </div>
+            </div>
+        </a>
+
+        <div class="video-card">
+            <div class="thumbnail" style="background-color: #444;">
+                <div class="play-button">▶</div>
+            </div>
+            <div class="info">
+                <div class="title">Video Community</div>
+                <div class="description">I migliori momenti della settimana scelti da noi.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
